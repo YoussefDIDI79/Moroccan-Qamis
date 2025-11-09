@@ -2,6 +2,30 @@
    Responsive Design
    ======================================== */
 
+/* Extra Large Screens */
+@media (min-width: 1920px) {
+  .container {
+    max-width: 1400px;
+  }
+
+  .hero {
+    height: 60vh;
+    max-height: 650px;
+  }
+
+  .hero h1 {
+    font-size: 3.5rem;
+  }
+}
+
+/* Large Desktops */
+@media (min-width: 1440px) and (max-width: 1919px) {
+  .hero {
+    height: 65vh;
+    max-height: 600px;
+  }
+}
+
 /* Large Tablets and Small Desktops */
 @media (max-width: 1024px) {
   .container {
@@ -24,6 +48,57 @@
 
   .modal-body {
     grid-template-columns: 1fr;
+  }
+}
+
+/* Medium Tablets (around 770px width) */
+@media (min-width: 769px) and (max-width: 900px) {
+  .hero {
+    min-height: 350px;
+    height: 55vh;
+    max-height: 450px;
+    padding: 2.5rem 1.5rem;
+  }
+
+  .hero h1 {
+    font-size: 2.25rem;
+    margin-bottom: 1rem;
+  }
+
+  .hero p {
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .container {
+    padding: 0 1.5rem;
+  }
+
+  .section {
+    padding: 3rem 0;
+  }
+}
+
+/* Short Height Screens */
+@media (max-height: 650px) {
+  .hero {
+    min-height: 350px;
+    height: 80vh;
+    padding: 2rem 1.5rem;
+  }
+
+  .hero h1 {
+    font-size: 2rem;
+    margin-bottom: 0.75rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+    margin-bottom: 1.25rem;
+  }
+
+  .navbar {
+    padding: 0.75rem 0;
   }
 }
 

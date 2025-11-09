@@ -100,41 +100,175 @@
     <div class="container">
       <h2 class="section-title" data-i18n="categories.title">Shop by Category</h2>
       <div class="categories-grid">
-        <a href="shop.html?category=classic" class="category-card" data-aos="zoom-in">
-          <img src="https://images.unsplash.com/photo-1622519407650-3df9883f76e6?w=600&h=600&fit=crop" alt="Classic Qamis">
-          <h3 data-i18n="categories.classic">Classic Qamis</h3>
+        <a href="shop.html?category=classic" class="category-card" data-aos="zoom-in" style="position: relative; overflow: hidden; background: linear-gradient(135deg, #2A7C5B 0%, #1a5c42 100%); min-height: 300px; display: flex; align-items: flex-end;">
+          <div style="position: absolute; inset: 0; background: url('azs.jpg') center/cover; opacity: 0.9;"></div>
+          <h3 data-i18n="categories.classic" style="position: relative; z-index: 2; width: 100%; background: linear-gradient(to top, rgba(0,0,0,0.9), transparent); color: white; padding: 2rem 1rem 1rem; margin: 0; font-size: 1.5rem; font-weight: 700;">Classic Qamis</h3>
         </a>
         
-        <a href="shop.html?category=embroidered" class="category-card" data-aos="zoom-in" data-aos-delay="100">
-          <img src="https://images.unsplash.com/photo-1583743814966-8936f5b7be1a?w=600&h=600&fit=crop" alt="Embroidered">
-          <h3 data-i18n="categories.embroidered">Embroidered</h3>
+        <a href="shop.html?category=embroidered" class="category-card" data-aos="zoom-in" data-aos-delay="100" style="position: relative; overflow: hidden; background: linear-gradient(135deg, #D4AF37 0%, #C4A030 100%); min-height: 300px; display: flex; align-items: flex-end;">
+          <div style="position: absolute; inset: 0; background: url('https://images.unsplash.com/photo-1583743814966-8936f5b7be1a?w=600&h=600&fit=crop&q=80') center/cover; opacity: 0.9;"></div>
+          <h3 data-i18n="categories.embroidered" style="position: relative; z-index: 2; width: 100%; background: linear-gradient(to top, rgba(0,0,0,0.9), transparent); color: white; padding: 2rem 1rem 1rem; margin: 0; font-size: 1.5rem; font-weight: 700;">Embroidered</h3>
         </a>
         
-        <a href="shop.html?category=modern" class="category-card" data-aos="zoom-in" data-aos-delay="200">
-          <img src="https://images.unsplash.com/photo-1490481651871-ab68de25d43d?w=600&h=600&fit=crop" alt="Modern Cuts">
-          <h3 data-i18n="categories.modern">Modern Cuts</h3>
+        <a href="shop.html?category=modern" class="category-card" data-aos="zoom-in" data-aos-delay="200" style="position: relative; overflow: hidden; background: linear-gradient(135deg, #8B4513 0%, #6B3410 100%); min-height: 300px; display: flex; align-items: flex-end;">
+          <div style="position: absolute; inset: 0; background: url('https://images.unsplash.com/photo-1490481651871-ab68de25d43d?w=600&h=600&fit=crop&q=80') center/cover; opacity: 0.9;"></div>
+          <h3 data-i18n="categories.modern" style="position: relative; z-index: 2; width: 100%; background: linear-gradient(to top, rgba(0,0,0,0.9), transparent); color: white; padding: 2rem 1rem 1rem; margin: 0; font-size: 1.5rem; font-weight: 700;">Modern Cuts</h3>
         </a>
         
-        <a href="shop.html?category=luxury" class="category-card" data-aos="zoom-in" data-aos-delay="300">
-          <img src="https://images.unsplash.com/photo-1617127365659-c47fa864d8bc?w=600&h=600&fit=crop" alt="Luxury Collection">
-          <h3 data-i18n="categories.luxury">Luxury Collection</h3>
+        <a href="shop.html?category=luxury" class="category-card" data-aos="zoom-in" data-aos-delay="300" style="position: relative; overflow: hidden; background: linear-gradient(135deg, #C41E3A 0%, #8B1428 100%); min-height: 300px; display: flex; align-items: flex-end;">
+          <div style="position: absolute; inset: 0; background: url('https://images.unsplash.com/photo-1617127365659-c47fa864d8bc?w=600&h=600&fit=crop&q=80') center/cover; opacity: 0.9;"></div>
+          <h3 data-i18n="categories.luxury" style="position: relative; z-index: 2; width: 100%; background: linear-gradient(to top, rgba(0,0,0,0.9), transparent); color: white; padding: 2rem 1rem 1rem; margin: 0; font-size: 1.5rem; font-weight: 700;">Luxury Collection</h3>
         </a>
       </div>
     </div>
   </section>
 
-  <!-- Bestsellers Section -->
-  <section class="section" style="background: var(--white);">
+  <!-- Featured Collections Section -->
+  <section class="section" style="background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%); padding: 5rem 0;">
     <div class="container">
-      <h2 class="section-title" data-i18n="bestsellers.title">Bestsellers</h2>
-      <div class="swiper bestsellers-slider">
-        <div class="swiper-wrapper" id="bestsellers-container"></div>
-        <div class="swiper-pagination"></div>
-        <div class="swiper-button-next"></div>
-        <div class="swiper-button-prev"></div>
+      <div style="text-align: center; margin-bottom: 3rem;" data-aos="fade-up">
+        <h2 style="font-size: 2.5rem; color: var(--primary); margin-bottom: 0.5rem;">Featured Collections</h2>
+        <p style="font-size: 1.125rem; color: var(--text-light);">Discover our most popular and exclusive designs</p>
+      </div>
+      
+      <div class="products-grid" style="gap: 2rem;">
+        <!-- Product 1 - Premium -->
+        <div class="product-card" data-aos="fade-up" data-aos-delay="100" style="position: relative; overflow: hidden; border-radius: 12px; box-shadow: 0 10px 30px rgba(0,0,0,0.15); transition: all 0.4s ease;">
+          <div class="product-image" style="position: relative; overflow: hidden; height: 400px;">
+            <img src="azss.jpg" alt="Premium White Qamis" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.4s ease;">
+            <div style="position: absolute; top: 1rem; right: 1rem; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 0.5rem 1rem; border-radius: 20px; font-size: 0.75rem; font-weight: 700; text-transform: uppercase;">Premium</div>
+            <div style="position: absolute; bottom: 0; left: 0; right: 0; background: linear-gradient(to top, rgba(0,0,0,0.8), transparent); padding: 2rem 1.5rem 1.5rem; transform: translateY(100%); transition: transform 0.4s ease;" class="product-quick-info">
+              <div style="display: flex; gap: 0.5rem; margin-bottom: 1rem;">
+                <button style="flex: 1; background: white; color: var(--primary); padding: 0.75rem; border-radius: 8px; font-weight: 600; border: none; cursor: pointer; transition: all 0.3s;">Quick View</button>
+                <button style="width: 50px; background: var(--primary); color: white; border-radius: 8px; border: none; cursor: pointer; transition: all 0.3s;"><i class="fas fa-heart"></i></button>
+              </div>
+            </div>
+          </div>
+          <div class="product-info" style="padding: 1.5rem;">
+            <div style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.5rem;">
+              <div style="color: #FFA500; font-size: 0.875rem;">★★★★★</div>
+              <span style="color: var(--text-light); font-size: 0.875rem;">(127 reviews)</span>
+            </div>
+            <h3 class="product-name" style="font-size: 1.25rem; margin-bottom: 0.5rem; color: var(--text-dark);">Premium White Qamis</h3>
+            <p style="color: var(--text-light); font-size: 0.875rem; margin-bottom: 1rem;">Handcrafted with finest Egyptian cotton</p>
+            <div style="display: flex; justify-content: space-between; align-items: center;">
+              <div>
+                <span style="font-size: 1.5rem; font-weight: 800; color: var(--primary);">$89.99</span>
+                <span style="text-decoration: line-through; color: var(--text-light); margin-left: 0.5rem;">$129.99</span>
+              </div>
+              <button class="btn btn-primary btn-sm add-to-cart-btn" data-product-id="1" data-product-name="Premium White Qamis" data-product-price="89.99" data-product-image="azss.jpg" style="padding: 0.75rem 1.5rem; border-radius: 8px;"><i class="fas fa-shopping-cart"></i> Add</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 2 - Luxury -->
+        <div class="product-card" data-aos="fade-up" data-aos-delay="200" style="position: relative; overflow: hidden; border-radius: 12px; box-shadow: 0 10px 30px rgba(0,0,0,0.15); transition: all 0.4s ease;">
+          <div class="product-image" style="position: relative; overflow: hidden; height: 400px;">
+            <img src="https://images.unsplash.com/photo-1583743814966-8936f5b7be1a?w=800&h=1200&fit=crop&q=80" alt="Luxury Embroidered Qamis" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.4s ease;">
+            <div style="position: absolute; top: 1rem; right: 1rem; background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%); color: white; padding: 0.5rem 1rem; border-radius: 20px; font-size: 0.75rem; font-weight: 700; text-transform: uppercase;">Luxury</div>
+            <div style="position: absolute; bottom: 0; left: 0; right: 0; background: linear-gradient(to top, rgba(0,0,0,0.8), transparent); padding: 2rem 1.5rem 1.5rem; transform: translateY(100%); transition: transform 0.4s ease;" class="product-quick-info">
+              <div style="display: flex; gap: 0.5rem; margin-bottom: 1rem;">
+                <button style="flex: 1; background: white; color: var(--primary); padding: 0.75rem; border-radius: 8px; font-weight: 600; border: none; cursor: pointer;">Quick View</button>
+                <button style="width: 50px; background: var(--primary); color: white; border-radius: 8px; border: none; cursor: pointer;"><i class="fas fa-heart"></i></button>
+              </div>
+            </div>
+          </div>
+          <div class="product-info" style="padding: 1.5rem;">
+            <div style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.5rem;">
+              <div style="color: #FFA500; font-size: 0.875rem;">★★★★★</div>
+              <span style="color: var(--text-light); font-size: 0.875rem;">(98 reviews)</span>
+            </div>
+            <h3 class="product-name" style="font-size: 1.25rem; margin-bottom: 0.5rem; color: var(--text-dark);">Luxury Embroidered Qamis</h3>
+            <p style="color: var(--text-light); font-size: 0.875rem; margin-bottom: 1rem;">Intricate gold thread embroidery</p>
+            <div style="display: flex; justify-content: space-between; align-items: center;">
+              <div>
+                <span style="font-size: 1.5rem; font-weight: 800; color: var(--primary);">$149.99</span>
+                <span style="text-decoration: line-through; color: var(--text-light); margin-left: 0.5rem;">$199.99</span>
+              </div>
+              <button class="btn btn-primary btn-sm add-to-cart-btn" data-product-id="2" data-product-name="Luxury Embroidered Qamis" data-product-price="149.99" data-product-image="https://images.unsplash.com/photo-1583743814966-8936f5b7be1a?w=400&h=600&fit=crop&q=80" style="padding: 0.75rem 1.5rem; border-radius: 8px;"><i class="fas fa-shopping-cart"></i> Add</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 3 - Bestseller -->
+        <div class="product-card" data-aos="fade-up" data-aos-delay="300" style="position: relative; overflow: hidden; border-radius: 12px; box-shadow: 0 10px 30px rgba(0,0,0,0.15); transition: all 0.4s ease;">
+          <div class="product-image" style="position: relative; overflow: hidden; height: 400px;">
+            <img src="https://images.unsplash.com/photo-1490481651871-ab68de25d43d?w=800&h=1200&fit=crop&q=80" alt="Modern Slim Fit Qamis" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.4s ease;">
+            <div style="position: absolute; top: 1rem; right: 1rem; background: linear-gradient(135deg, #fa709a 0%, #fee140 100%); color: white; padding: 0.5rem 1rem; border-radius: 20px; font-size: 0.75rem; font-weight: 700; text-transform: uppercase;">Bestseller</div>
+            <div style="position: absolute; bottom: 0; left: 0; right: 0; background: linear-gradient(to top, rgba(0,0,0,0.8), transparent); padding: 2rem 1.5rem 1.5rem; transform: translateY(100%); transition: transform 0.4s ease;" class="product-quick-info">
+              <div style="display: flex; gap: 0.5rem; margin-bottom: 1rem;">
+                <button style="flex: 1; background: white; color: var(--primary); padding: 0.75rem; border-radius: 8px; font-weight: 600; border: none; cursor: pointer;">Quick View</button>
+                <button style="width: 50px; background: var(--primary); color: white; border-radius: 8px; border: none; cursor: pointer;"><i class="fas fa-heart"></i></button>
+              </div>
+            </div>
+          </div>
+          <div class="product-info" style="padding: 1.5rem;">
+            <div style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.5rem;">
+              <div style="color: #FFA500; font-size: 0.875rem;">★★★★★</div>
+              <span style="color: var(--text-light); font-size: 0.875rem;">(215 reviews)</span>
+            </div>
+            <h3 class="product-name" style="font-size: 1.25rem; margin-bottom: 0.5rem; color: var(--text-dark);">Modern Slim Fit Qamis</h3>
+            <p style="color: var(--text-light); font-size: 0.875rem; margin-bottom: 1rem;">Contemporary design meets tradition</p>
+            <div style="display: flex; justify-content: space-between; align-items: center;">
+              <div>
+                <span style="font-size: 1.5rem; font-weight: 800; color: var(--primary);">$99.99</span>
+                <span style="text-decoration: line-through; color: var(--text-light); margin-left: 0.5rem;">$139.99</span>
+              </div>
+              <button class="btn btn-primary btn-sm add-to-cart-btn" data-product-id="3" data-product-name="Modern Slim Fit Qamis" data-product-price="99.99" data-product-image="https://images.unsplash.com/photo-1490481651871-ab68de25d43d?w=400&h=600&fit=crop&q=80" style="padding: 0.75rem 1.5rem; border-radius: 8px;"><i class="fas fa-shopping-cart"></i> Add</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 4 - New Arrival -->
+        <div class="product-card" data-aos="fade-up" data-aos-delay="400" style="position: relative; overflow: hidden; border-radius: 12px; box-shadow: 0 10px 30px rgba(0,0,0,0.15); transition: all 0.4s ease;">
+          <div class="product-image" style="position: relative; overflow: hidden; height: 400px;">
+            <img src="https://images.unsplash.com/photo-1617127365659-c47fa864d8bc?w=800&h=1200&fit=crop&q=80" alt="Royal Blue Qamis" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.4s ease;">
+            <div style="position: absolute; top: 1rem; right: 1rem; background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%); color: white; padding: 0.5rem 1rem; border-radius: 20px; font-size: 0.75rem; font-weight: 700; text-transform: uppercase;">New</div>
+            <div style="position: absolute; bottom: 0; left: 0; right: 0; background: linear-gradient(to top, rgba(0,0,0,0.8), transparent); padding: 2rem 1.5rem 1.5rem; transform: translateY(100%); transition: transform 0.4s ease;" class="product-quick-info">
+              <div style="display: flex; gap: 0.5rem; margin-bottom: 1rem;">
+                <button style="flex: 1; background: white; color: var(--primary); padding: 0.75rem; border-radius: 8px; font-weight: 600; border: none; cursor: pointer;">Quick View</button>
+                <button style="width: 50px; background: var(--primary); color: white; border-radius: 8px; border: none; cursor: pointer;"><i class="fas fa-heart"></i></button>
+              </div>
+            </div>
+          </div>
+          <div class="product-info" style="padding: 1.5rem;">
+            <div style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.5rem;">
+              <div style="color: #FFA500; font-size: 0.875rem;">★★★★★</div>
+              <span style="color: var(--text-light); font-size: 0.875rem;">(43 reviews)</span>
+            </div>
+            <h3 class="product-name" style="font-size: 1.25rem; margin-bottom: 0.5rem; color: var(--text-dark);">Royal Blue Qamis</h3>
+            <p style="color: var(--text-light); font-size: 0.875rem; margin-bottom: 1rem;">Premium silk blend fabric</p>
+            <div style="display: flex; justify-content: space-between; align-items: center;">
+              <div>
+                <span style="font-size: 1.5rem; font-weight: 800; color: var(--primary);">$119.99</span>
+                <span style="text-decoration: line-through; color: var(--text-light); margin-left: 0.5rem;">$159.99</span>
+              </div>
+              <button class="btn btn-primary btn-sm add-to-cart-btn" data-product-id="4" data-product-name="Royal Blue Qamis" data-product-price="119.99" data-product-image="https://images.unsplash.com/photo-1617127365659-c47fa864d8bc?w=400&h=600&fit=crop&q=80" style="padding: 0.75rem 1.5rem; border-radius: 8px;"><i class="fas fa-shopping-cart"></i> Add</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div style="text-align: center; margin-top: 3rem;" data-aos="fade-up">
+        <a href="shop.html" class="btn btn-primary" style="padding: 1rem 3rem; font-size: 1.125rem; border-radius: 50px; box-shadow: 0 8px 20px rgba(42, 124, 91, 0.3);">
+          View All Products <i class="fas fa-arrow-right" style="margin-left: 0.5rem;"></i>
+        </a>
       </div>
     </div>
   </section>
+  
+  <style>
+    .product-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 20px 40px rgba(0,0,0,0.2) !important;
+    }
+    .product-card:hover .product-image img {
+      transform: scale(1.1);
+    }
+    .product-card:hover .product-quick-info {
+      transform: translateY(0) !important;
+    }
+  </style>
 
   <!-- Testimonials Section -->
   <section class="section testimonials">
@@ -171,6 +305,119 @@
           </div>
         </div>
         <div class="swiper-pagination"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Choose Us Section -->
+  <section class="section" style="background: var(--white);">
+    <div class="container">
+      <div style="text-align: center; margin-bottom: 3rem;" data-aos="fade-up">
+        <h2 style="font-size: 2.5rem; color: var(--primary);">Why Choose Moroccan Qamis?</h2>
+        <p style="font-size: 1.125rem; color: var(--text-light); max-width: 600px; margin: 1rem auto;">Experience the perfect blend of tradition and quality</p>
+      </div>
+      
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem;">
+        <div data-aos="fade-up" data-aos-delay="100" style="text-align: center; padding: 2rem; background: linear-gradient(135deg, #2A7C5B 0%, #1a5c42 100%); border-radius: 16px; color: white; box-shadow: 0 10px 30px rgba(42, 124, 91, 0.3);">
+          <div style="width: 80px; height: 80px; margin: 0 auto 1.5rem; background: rgba(255,255,255,0.2); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 2.5rem;">
+            <i class="fas fa-hands-helping"></i>
+          </div>
+          <h3 style="margin-bottom: 1rem; font-size: 1.5rem;">Handcrafted Excellence</h3>
+          <p style="opacity: 0.9;">Every piece is meticulously crafted by skilled Moroccan artisans with decades of experience</p>
+        </div>
+        
+        <div data-aos="fade-up" data-aos-delay="200" style="text-align: center; padding: 2rem; background: linear-gradient(135deg, #D4AF37 0%, #C4A030 100%); border-radius: 16px; color: white; box-shadow: 0 10px 30px rgba(212, 175, 55, 0.3);">
+          <div style="width: 80px; height: 80px; margin: 0 auto 1.5rem; background: rgba(255,255,255,0.2); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 2.5rem;">
+            <i class="fas fa-gem"></i>
+          </div>
+          <h3 style="margin-bottom: 1rem; font-size: 1.5rem;">Premium Materials</h3>
+          <p style="opacity: 0.9;">We use only the finest fabrics sourced from trusted suppliers worldwide</p>
+        </div>
+        
+        <div data-aos="fade-up" data-aos-delay="300" style="text-align: center; padding: 2rem; background: linear-gradient(135deg, #8B4513 0%, #6B3410 100%); border-radius: 16px; color: white; box-shadow: 0 10px 30px rgba(139, 69, 19, 0.3);">
+          <div style="width: 80px; height: 80px; margin: 0 auto 1.5rem; background: rgba(255,255,255,0.2); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 2.5rem;">
+            <i class="fas fa-shipping-fast"></i>
+          </div>
+          <h3 style="margin-bottom: 1rem; font-size: 1.5rem;">Fast Worldwide Shipping</h3>
+          <p style="opacity: 0.9;">Free express shipping on orders over $100 to anywhere in the world</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Our Process Section -->
+  <section class="section" style="background: linear-gradient(135deg, #f5f7fa 0%, #e8ebe8 100%);">
+    <div class="container">
+      <div style="text-align: center; margin-bottom: 3rem;" data-aos="fade-up">
+        <h2 style="font-size: 2.5rem; color: var(--text-dark);">Our Crafting Process</h2>
+        <p style="font-size: 1.125rem; color: var(--text-light);">From design to delivery, excellence at every step</p>
+      </div>
+      
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem;">
+        <div data-aos="zoom-in" data-aos-delay="100" style="background: white; padding: 2rem; border-radius: 12px; text-align: center; box-shadow: 0 10px 30px rgba(0,0,0,0.1);">
+          <div style="width: 60px; height: 60px; margin: 0 auto 1rem; background: var(--primary); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-size: 1.5rem; font-weight: 800;">1</div>
+          <h4 style="color: var(--primary); margin-bottom: 0.5rem;">Design Selection</h4>
+          <p style="color: var(--text-light); font-size: 0.875rem;">Choose from our curated collection of authentic Moroccan designs</p>
+        </div>
+        
+        <div data-aos="zoom-in" data-aos-delay="200" style="background: white; padding: 2rem; border-radius: 12px; text-align: center; box-shadow: 0 10px 30px rgba(0,0,0,0.1);">
+          <div style="width: 60px; height: 60px; margin: 0 auto 1rem; background: var(--secondary); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-size: 1.5rem; font-weight: 800;">2</div>
+          <h4 style="color: var(--primary); margin-bottom: 0.5rem;">Handcrafting</h4>
+          <p style="color: var(--text-light); font-size: 0.875rem;">Skilled artisans bring your qamis to life with traditional techniques</p>
+        </div>
+        
+        <div data-aos="zoom-in" data-aos-delay="300" style="background: white; padding: 2rem; border-radius: 12px; text-align: center; box-shadow: 0 10px 30px rgba(0,0,0,0.1);">
+          <div style="width: 60px; height: 60px; margin: 0 auto 1rem; background: var(--accent); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-size: 1.5rem; font-weight: 800;">3</div>
+          <h4 style="color: var(--primary); margin-bottom: 0.5rem;">Quality Check</h4>
+          <p style="color: var(--text-light); font-size: 0.875rem;">Rigorous inspection ensures every detail meets our high standards</p>
+        </div>
+        
+        <div data-aos="zoom-in" data-aos-delay="400" style="background: white; padding: 2rem; border-radius: 12px; text-align: center; box-shadow: 0 10px 30px rgba(0,0,0,0.1);">
+          <div style="width: 60px; height: 60px; margin: 0 auto 1rem; background: #2A7C5B; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-size: 1.5rem; font-weight: 800;">4</div>
+          <h4 style="color: var(--primary); margin-bottom: 0.5rem;">Fast Delivery</h4>
+          <p style="color: var(--text-light); font-size: 0.875rem;">Carefully packaged and shipped directly to your doorstep</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Special Offers Banner -->
+  <section style="background: linear-gradient(135deg, #2A7C5B 0%, #1a5c42 100%); padding: 4rem 2rem; position: relative; overflow: hidden;">
+    <div style="position: absolute; top: -50px; right: -50px; width: 200px; height: 200px; background: rgba(255,255,255,0.1); border-radius: 50%;"></div>
+    <div style="position: absolute; bottom: -30px; left: -30px; width: 150px; height: 150px; background: rgba(255,255,255,0.1); border-radius: 50%;"></div>
+    <div class="container" style="position: relative; z-index: 2;">
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 3rem; align-items: center;">
+        <div data-aos="fade-right" style="color: white;">
+          <h2 style="font-size: 2.5rem; margin-bottom: 1rem; color: white;">Limited Time Offer!</h2>
+          <p style="font-size: 1.25rem; margin-bottom: 2rem; opacity: 0.9;">Get 25% OFF on your first order</p>
+          <div style="display: flex; gap: 1rem; align-items: center; margin-bottom: 2rem;">
+            <div style="background: rgba(255,255,255,0.2); padding: 1rem; border-radius: 12px; text-align: center; min-width: 80px;">
+              <div style="font-size: 2rem; font-weight: 800;">12</div>
+              <div style="font-size: 0.875rem; opacity: 0.8;">Days</div>
+            </div>
+            <div style="font-size: 2rem;">:</div>
+            <div style="background: rgba(255,255,255,0.2); padding: 1rem; border-radius: 12px; text-align: center; min-width: 80px;">
+              <div style="font-size: 2rem; font-weight: 800;">08</div>
+              <div style="font-size: 0.875rem; opacity: 0.8;">Hours</div>
+            </div>
+            <div style="font-size: 2rem;">:</div>
+            <div style="background: rgba(255,255,255,0.2); padding: 1rem; border-radius: 12px; text-align: center; min-width: 80px;">
+              <div style="font-size: 2rem; font-weight: 800;">45</div>
+              <div style="font-size: 0.875rem; opacity: 0.8;">Minutes</div>
+            </div>
+          </div>
+          <a href="shop.html" class="btn" style="background: white; color: #2A7C5B; padding: 1rem 2.5rem; font-weight: 700; border-radius: 50px; box-shadow: 0 8px 20px rgba(0,0,0,0.2);">
+            Shop Now <i class="fas fa-arrow-right" style="margin-left: 0.5rem;"></i>
+          </a>
+        </div>
+        <div data-aos="fade-left" style="text-align: center;">
+          <div style="max-width: 400px; width: 100%; height: 500px; background: linear-gradient(135deg, #2A7C5B 0%, #1a5c42 100%); border-radius: 16px; box-shadow: 0 20px 60px rgba(0,0,0,0.3); display: flex; flex-direction: column; align-items: center; justify-content: center; color: white; padding: 2rem;">
+            <div style="font-size: 4rem; margin-bottom: 1rem;">🎁</div>
+            <div style="font-size: 3rem; font-weight: 800; margin-bottom: 1rem;">25% OFF</div>
+            <div style="font-size: 1.25rem; text-align: center; opacity: 0.9;">First Order Special</div>
+            <div style="margin-top: 2rem; padding: 1rem 2rem; background: rgba(255,255,255,0.2); border-radius: 50px; font-weight: 600;">Limited Time Only</div>
+          </div>
+        </div>
       </div>
     </div>
   </section>
@@ -256,23 +503,237 @@
   <script src="assets/js/lang.js"></script>
   <script src="assets/js/cart.js"></script>
   <script src="assets/js/main.js"></script>
-  <script src="assets/js/form-validation.js"></script>
   
   <script>
-    // Load and render bestsellers
-    document.addEventListener('DOMContentLoaded', async () => {
-      await loadProducts();
-      const bestsellers = products.filter(p => p.bestseller);
-      const container = document.getElementById('bestsellers-container');
+    // Quick View Modal Function
+    function showQuickView(productName, price, image, description) {
+      const modal = document.createElement('div');
+      modal.className = 'quick-view-modal';
+      modal.innerHTML = `
+        <div class="quick-view-overlay" onclick="this.parentElement.remove()"></div>
+        <div class="quick-view-content">
+          <button class="quick-view-close" onclick="this.closest('.quick-view-modal').remove()">
+            <i class="fas fa-times"></i>
+          </button>
+          <div class="quick-view-body">
+            <div class="quick-view-image">
+              <img src="${image}" alt="${productName}">
+            </div>
+            <div class="quick-view-info">
+              <h2>${productName}</h2>
+              <div style="color: #FFA500; margin: 1rem 0;">★★★★★</div>
+              <p class="quick-view-price">${price}</p>
+              <p class="quick-view-description">${description}</p>
+              <div class="quick-view-options">
+                <div>
+                  <label>Size:</label>
+                  <select style="width: 100%; padding: 0.75rem; border: 1px solid #ddd; border-radius: 8px; margin-top: 0.5rem;">
+                    <option>S</option>
+                    <option selected>M</option>
+                    <option>L</option>
+                    <option>XL</option>
+                    <option>XXL</option>
+                  </select>
+                </div>
+                <div style="margin-top: 1rem;">
+                  <label>Color:</label>
+                  <select style="width: 100%; padding: 0.75rem; border: 1px solid #ddd; border-radius: 8px; margin-top: 0.5rem;">
+                    <option>White</option>
+                    <option>Navy</option>
+                    <option>Black</option>
+                    <option>Beige</option>
+                  </select>
+                </div>
+              </div>
+              <button class="btn btn-primary" style="width: 100%; margin-top: 2rem; padding: 1rem; font-size: 1.125rem;">
+                <i class="fas fa-shopping-cart"></i> Add to Cart
+              </button>
+            </div>
+          </div>
+        </div>
+      `;
+      document.body.appendChild(modal);
+      setTimeout(() => modal.classList.add('show'), 10);
+    }
+
+    // Initialize everything after DOM is loaded
+    document.addEventListener('DOMContentLoaded', () => {
+      // Initialize AOS
+      if (typeof AOS !== 'undefined') {
+        AOS.init({
+          duration: 800,
+          once: true,
+          offset: 100
+        });
+      }
       
-      container.innerHTML = bestsellers.map(product => {
-        const card = renderProductCard(product);
-        return `<div class="swiper-slide">${card}</div>`;
-      }).join('');
+      // Initialize Swipers
+      setTimeout(() => {
+        if (typeof Swiper !== 'undefined') {
+          // Testimonials slider
+          new Swiper('.testimonials-slider', {
+            slidesPerView: 1,
+            spaceBetween: 30,
+            loop: true,
+            autoplay: { delay: 5000 },
+            pagination: {
+              el: '.swiper-pagination',
+              clickable: true,
+            },
+            breakpoints: {
+              768: { slidesPerView: 2 },
+              1024: { slidesPerView: 3 },
+            },
+          });
+        }
+      }, 100);
+
+      // Add to Cart functionality
+      document.querySelectorAll('.add-to-cart-btn').forEach(btn => {
+        btn.addEventListener('click', function(e) {
+          e.preventDefault();
+          const productId = this.getAttribute('data-product-id');
+          const productName = this.getAttribute('data-product-name');
+          const productPrice = parseFloat(this.getAttribute('data-product-price'));
+          const productImage = this.getAttribute('data-product-image');
+          
+          // Add to cart
+          if (typeof cart !== 'undefined') {
+            cart.add(productId, 'M', 'Default', 1);
+          } else {
+            // Fallback if cart.js not loaded
+            showCartNotification('✓ Added to cart!');
+          }
+          
+          // Visual feedback
+          this.innerHTML = '<i class="fas fa-check"></i> Added!';
+          this.style.background = '#28a745';
+          setTimeout(() => {
+            this.innerHTML = '<i class="fas fa-shopping-cart"></i> Add';
+            this.style.background = '';
+          }, 2000);
+        });
+      });
       
-      // Reinitialize Swiper after content is loaded
-      initSwipers();
+      // Cart notification helper
+      function showCartNotification(message) {
+        const notification = document.createElement('div');
+        notification.style.cssText = 'position: fixed; top: 100px; right: 20px; background: #28a745; color: white; padding: 1rem 2rem; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.2); z-index: 99999; animation: slideIn 0.3s ease;';
+        notification.textContent = message;
+        document.body.appendChild(notification);
+        setTimeout(() => notification.remove(), 3000);
+      }
+
+      // Add Quick View event listeners
+      document.querySelectorAll('.product-quick-info button:first-child').forEach((btn, index) => {
+        btn.onclick = (e) => {
+          e.preventDefault();
+          const products = [
+            { name: 'Premium White Qamis', price: '$89.99', image: 'https://images.unsplash.com/photo-1622519407650-3df9883f76e6?w=800&h=1200&fit=crop&q=80', desc: 'Handcrafted with finest Egyptian cotton. Perfect for daily wear and special occasions.' },
+            { name: 'Luxury Embroidered Qamis', price: '$149.99', image: 'https://images.unsplash.com/photo-1583743814966-8936f5b7be1a?w=800&h=1200&fit=crop&q=80', desc: 'Intricate gold thread embroidery. A masterpiece of Moroccan craftsmanship.' },
+            { name: 'Modern Slim Fit Qamis', price: '$99.99', image: 'https://images.unsplash.com/photo-1490481651871-ab68de25d43d?w=800&h=1200&fit=crop&q=80', desc: 'Contemporary design meets traditional elegance. Tailored for a modern fit.' },
+            { name: 'Royal Blue Qamis', price: '$119.99', image: 'https://images.unsplash.com/photo-1617127365659-c47fa864d8bc?w=800&h=1200&fit=crop&q=80', desc: 'Premium silk blend fabric with exquisite detailing. A true showstopper.' }
+          ];
+          const product = products[index];
+          showQuickView(product.name, product.price, product.image, product.desc);
+        };
+      });
     });
   </script>
+  
+  <style>
+    @keyframes slideIn {
+      from {
+        transform: translateX(100%);
+        opacity: 0;
+      }
+      to {
+        transform: translateX(0);
+        opacity: 1;
+      }
+    }
+    
+    .quick-view-modal {
+      position: fixed;
+      inset: 0;
+      z-index: 99999;
+      opacity: 0;
+      transition: opacity 0.3s ease;
+    }
+    .quick-view-modal.show {
+      opacity: 1;
+    }
+    .quick-view-overlay {
+      position: absolute;
+      inset: 0;
+      background: rgba(0,0,0,0.8);
+      backdrop-filter: blur(5px);
+    }
+    .quick-view-content {
+      position: relative;
+      max-width: 900px;
+      margin: 2rem auto;
+      background: white;
+      border-radius: 16px;
+      overflow: hidden;
+      box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+      animation: slideUp 0.3s ease;
+    }
+    @keyframes slideUp {
+      from { transform: translateY(50px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+    .quick-view-close {
+      position: absolute;
+      top: 1rem;
+      right: 1rem;
+      width: 40px;
+      height: 40px;
+      background: white;
+      border: none;
+      border-radius: 50%;
+      font-size: 1.25rem;
+      cursor: pointer;
+      z-index: 10;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+      transition: all 0.3s;
+    }
+    .quick-view-close:hover {
+      background: var(--primary);
+      color: white;
+      transform: rotate(90deg);
+    }
+    .quick-view-body {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2rem;
+      padding: 2rem;
+    }
+    .quick-view-image img {
+      width: 100%;
+      border-radius: 12px;
+    }
+    .quick-view-info h2 {
+      font-size: 1.75rem;
+      color: var(--text-dark);
+      margin-bottom: 1rem;
+    }
+    .quick-view-price {
+      font-size: 2rem;
+      font-weight: 800;
+      color: var(--primary);
+      margin: 1rem 0;
+    }
+    .quick-view-description {
+      color: var(--text-light);
+      line-height: 1.8;
+      margin: 1rem 0;
+    }
+    @media (max-width: 768px) {
+      .quick-view-body {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
 </body>
 </html>
