@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shopping Cart - Moroccan Qamis</title>
+  
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Lato:wght@300;400;700&family=Cairo:wght@300;400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/responsive.css">
+  
+  <style>
+    .cart-container {
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+      gap: 3rem;
+      padding: 3rem 0;
+    }
+    
+    .cart-items {
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+    }
+    
+    .cart-item {
+      display: grid;
+      grid-template-columns: 120px 1fr auto auto;
+      gap: 1.5rem;
+      align-items: center;
+      background: var(--white);
+      padding: 1.5rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px var(--shadow);
+    }
+    
+    .cart-item img {
+      width: 100%;
+      aspect-ratio: 3/4;
+      object-fit: cover;
+      border-radius: 4px;
+    }
+    
+    .cart-item-details h3 {
+      margin-bottom: 0.5rem;
+    }
+    
+    .cart-item-meta {
+      color: var(--text-light);
+      font-size: 0.875rem;
+    }
+    
+    .cart-item-price {
+      font-weight: 700;
+      color: var(--primary);
+      margin-top: 0.5rem;
+    }
+    
+    .cart-item-quantity {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+    
+    .cart-item-quantity button {
+      width: 32px;
+      height: 32px;
+      background: var(--background);
+      border-radius: 4px;
+    }
+    
+    .cart-item-quantity input {
+      width: 50px;
+      text-align: center;
+      padding: 0.5rem;
+      border: 1px solid var(--border);
+      border-radius: 4px;
+    }
+    
+    .cart-item-total {
+      text-align: right;
+    }
+    
+    .cart-item-total p {
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: var(--primary);
+      margin-bottom: 1rem;
+    }
+    
+    .remove-btn {
+      color: var(--accent);
+      padding: 0.5rem;
+    }
+    
+    .cart-summary {
+      background: var(--white);
+      padding: 2rem;
+      border-radius: 8px;
+      height: fit-content;
+      position: sticky;
+      top: 100px;
+      box-shadow: 0 2px 8px var(--shadow);
+    }
+    
+    .cart-summary h2 {
+      margin-bottom: 1.5rem;
+      padding-bottom: 1rem;
+      border-bottom: 1px solid var(--border);
+    }
+    
+    .summary-row {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 1rem;
+    }
+    
+    .summary-row.total {
+      font-size: 1.25rem;
+      font-weight: 700;
+      padding-top: 1rem;
+      border-top: 2px solid var(--border);
+      margin-top: 1rem;
+    }
+    
+    .cart-empty {
+      text-align: center;
+      padding: 4rem 2rem;
+      background: var(--white);
+      border-radius: 8px;
+    }
+    
+    .cart-empty i {
+      font-size: 4rem;
+      color: var(--text-light);
+      margin-bottom: 1rem;
+    }
+    
+    @media (max-width: 768px) {
+      .cart-container {
+        grid-template-columns: 1fr;
+      }
+      
+      .cart-summary {
+        position: static;
+      }
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar">
+    <div class="container">
+      <div class="logo">Moroccan Qamis</div>
+      <ul class="nav-menu">
+        <li><a href="index.html" data-i18n="nav.home">Home</a></li>
+        <li><a href="shop.html" data-i18n="nav.shop">Shop</a></li>
+        <li><a href="about.html" data-i18n="nav.about">About</a></li>
+        <li><a href="contact.html" data-i18n="nav.contact">Contact</a></li>
+        <li><a href="faq.html" data-i18n="nav.faq">FAQ</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button class="lang-switch" data-lang="en">🇬🇧 EN</button>
+        <button class="lang-switch" data-lang="ar">🇸🇦 AR</button>
+        <a href="cart.html" class="cart-icon">
+          <i class="fas fa-shopping-cart"></i>
+          <span class="cart-count">0</span>
+        </a>
+      </div>
+      <button class="menu-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <section class="section">
+    <div class="container">
+      <h1 data-i18n="cart.title">Shopping Cart</h1>
+      
+      <div class="cart-empty" style="display: none;">
+        <i class="fas fa-shopping-cart"></i>
+        <h2 data-i18n="cart.empty">Your cart is empty</h2>
+        <a href="shop.html" class="btn btn-primary" data-i18n="cart.continueShopping">Continue Shopping</a>
+      </div>
+      
+      <div class="cart-container">
+        <div>
+          <div class="cart-items"></div>
+        </div>
+        
+        <div class="cart-summary">
+          <h2>Order Summary</h2>
+          <div class="summary-row">
+            <span data-i18n="cart.subtotal">Subtotal</span>
+            <span class="cart-subtotal">$0.00</span>
+          </div>
+          <div class="summary-row">
+            <span data-i18n="cart.shipping">Shipping</span>
+            <span class="cart-shipping">$0.00</span>
+          </div>
+          <div class="summary-row total">
+            <span data-i18n="cart.total">Total</span>
+            <span class="cart-total">$0.00</span>
+          </div>
+          <a href="checkout.html" class="btn btn-primary" style="width: 100%; margin-top: 1.5rem;" data-i18n="cart.checkout">Proceed to Checkout</a>
+          <a href="shop.html" class="btn btn-outline" style="width: 100%; margin-top: 1rem;" data-i18n="cart.continueShopping">Continue Shopping</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3 data-i18n="footer.about">About Us</h3>
+          <p data-i18n="footer.aboutText">Bringing authentic Moroccan craftsmanship to the world</p>
+        </div>
+        <div class="footer-section">
+          <h3 data-i18n="footer.quickLinks">Quick Links</h3>
+          <ul>
+            <li><a href="shop.html" data-i18n="nav.shop">Shop</a></li>
+            <li><a href="about.html" data-i18n="nav.about">About</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2024 Moroccan Qamis. <span data-i18n="footer.rights">All rights reserved</span>.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/lang.js"></script>
+  <script src="assets/js/cart.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,264 @@
+{
+  "en": {
+    "nav": {
+      "home": "Home",
+      "shop": "Shop",
+      "about": "About",
+      "contact": "Contact",
+      "faq": "FAQ"
+    },
+    "hero": {
+      "title": "Authentic Moroccan Qamis",
+      "subtitle": "Handcrafted elegance from the heart of Morocco",
+      "shopBtn": "Shop Now"
+    },
+    "features": {
+      "quality": {
+        "title": "Premium Quality",
+        "desc": "Finest fabrics and traditional craftsmanship"
+      },
+      "shipping": {
+        "title": "Free Shipping",
+        "desc": "On orders over $100 worldwide"
+      },
+      "returns": {
+        "title": "Easy Returns",
+        "desc": "30-day hassle-free return policy"
+      }
+    },
+    "categories": {
+      "title": "Shop by Category",
+      "classic": "Classic Qamis",
+      "embroidered": "Embroidered",
+      "modern": "Modern Cuts",
+      "luxury": "Luxury Collection"
+    },
+    "bestsellers": {
+      "title": "Bestsellers",
+      "viewAll": "View All"
+    },
+    "testimonials": {
+      "title": "What Our Customers Say"
+    },
+    "cta": {
+      "title": "New Collection Available",
+      "subtitle": "Discover our latest designs",
+      "btn": "Explore Now"
+    },
+    "instagram": {
+      "title": "Follow Us @MoroccanQamis"
+    },
+    "footer": {
+      "about": "About Us",
+      "aboutText": "Bringing authentic Moroccan craftsmanship to the world",
+      "quickLinks": "Quick Links",
+      "customer": "Customer Service",
+      "privacy": "Privacy Policy",
+      "terms": "Terms & Conditions",
+      "shipping": "Shipping Info",
+      "returns": "Returns",
+      "newsletter": "Newsletter",
+      "newsletterText": "Subscribe for exclusive offers",
+      "emailPlaceholder": "Your email",
+      "subscribe": "Subscribe",
+      "rights": "All rights reserved"
+    },
+    "shop": {
+      "title": "Our Collection",
+      "filters": "Filters",
+      "sortBy": "Sort By",
+      "priceRange": "Price Range",
+      "size": "Size",
+      "color": "Color",
+      "style": "Style",
+      "addToCart": "Add to Cart",
+      "quickView": "Quick View",
+      "noProducts": "No products found"
+    },
+    "product": {
+      "size": "Size",
+      "color": "Color",
+      "quantity": "Quantity",
+      "addToCart": "Add to Cart",
+      "description": "Description",
+      "details": "Details",
+      "shipping": "Shipping & Returns",
+      "reviews": "Reviews",
+      "related": "Related Products"
+    },
+    "cart": {
+      "title": "Shopping Cart",
+      "empty": "Your cart is empty",
+      "continueShopping": "Continue Shopping",
+      "subtotal": "Subtotal",
+      "shipping": "Shipping",
+      "total": "Total",
+      "checkout": "Proceed to Checkout",
+      "remove": "Remove",
+      "update": "Update Cart"
+    },
+    "checkout": {
+      "title": "Checkout",
+      "billing": "Billing Details",
+      "firstName": "First Name",
+      "lastName": "Last Name",
+      "email": "Email",
+      "phone": "Phone",
+      "address": "Address",
+      "city": "City",
+      "country": "Country",
+      "zip": "ZIP Code",
+      "payment": "Payment Method",
+      "placeOrder": "Place Order",
+      "orderSummary": "Order Summary"
+    },
+    "about": {
+      "title": "About Us",
+      "story": "Our Story",
+      "mission": "Our Mission",
+      "values": "Our Values"
+    },
+    "contact": {
+      "title": "Contact Us",
+      "name": "Name",
+      "email": "Email",
+      "message": "Message",
+      "send": "Send Message",
+      "info": "Contact Information"
+    },
+    "faq": {
+      "title": "Frequently Asked Questions"
+    }
+  },
+  "ar": {
+    "nav": {
+      "home": "الرئيسية",
+      "shop": "المتجر",
+      "about": "من نحن",
+      "contact": "اتصل بنا",
+      "faq": "الأسئلة الشائعة"
+    },
+    "hero": {
+      "title": "القمصان المغربية الأصيلة",
+      "subtitle": "أناقة مصنوعة يدوياً من قلب المغرب",
+      "shopBtn": "تسوق الآن"
+    },
+    "features": {
+      "quality": {
+        "title": "جودة عالية",
+        "desc": "أفضل الأقمشة والحرفية التقليدية"
+      },
+      "shipping": {
+        "title": "شحن مجاني",
+        "desc": "للطلبات فوق 100 دولار في جميع أنحاء العالم"
+      },
+      "returns": {
+        "title": "إرجاع سهل",
+        "desc": "سياسة إرجاع خالية من المتاعب لمدة 30 يوماً"
+      }
+    },
+    "categories": {
+      "title": "تسوق حسب الفئة",
+      "classic": "قمصان كلاسيكية",
+      "embroidered": "مطرزة",
+      "modern": "قصات عصرية",
+      "luxury": "مجموعة فاخرة"
+    },
+    "bestsellers": {
+      "title": "الأكثر مبيعاً",
+      "viewAll": "عرض الكل"
+    },
+    "testimonials": {
+      "title": "آراء عملائنا"
+    },
+    "cta": {
+      "title": "مجموعة جديدة متاحة",
+      "subtitle": "اكتشف أحدث تصاميمنا",
+      "btn": "استكشف الآن"
+    },
+    "instagram": {
+      "title": "تابعنا @MoroccanQamis"
+    },
+    "footer": {
+      "about": "من نحن",
+      "aboutText": "نقدم الحرفية المغربية الأصيلة إلى العالم",
+      "quickLinks": "روابط سريعة",
+      "customer": "خدمة العملاء",
+      "privacy": "سياسة الخصوصية",
+      "terms": "الشروط والأحكام",
+      "shipping": "معلومات الشحن",
+      "returns": "الإرجاع",
+      "newsletter": "النشرة الإخبارية",
+      "newsletterText": "اشترك للحصول على عروض حصرية",
+      "emailPlaceholder": "بريدك الإلكتروني",
+      "subscribe": "اشترك",
+      "rights": "جميع الحقوق محفوظة"
+    },
+    "shop": {
+      "title": "مجموعتنا",
+      "filters": "الفلاتر",
+      "sortBy": "ترتيب حسب",
+      "priceRange": "نطاق السعر",
+      "size": "المقاس",
+      "color": "اللون",
+      "style": "النمط",
+      "addToCart": "أضف إلى السلة",
+      "quickView": "عرض سريع",
+      "noProducts": "لم يتم العثور على منتجات"
+    },
+    "product": {
+      "size": "المقاس",
+      "color": "اللون",
+      "quantity": "الكمية",
+      "addToCart": "أضف إلى السلة",
+      "description": "الوصف",
+      "details": "التفاصيل",
+      "shipping": "الشحن والإرجاع",
+      "reviews": "التقييمات",
+      "related": "منتجات ذات صلة"
+    },
+    "cart": {
+      "title": "سلة التسوق",
+      "empty": "سلتك فارغة",
+      "continueShopping": "متابعة التسوق",
+      "subtotal": "المجموع الفرعي",
+      "shipping": "الشحن",
+      "total": "المجموع",
+      "checkout": "إتمام الطلب",
+      "remove": "إزالة",
+      "update": "تحديث السلة"
+    },
+    "checkout": {
+      "title": "إتمام الطلب",
+      "billing": "تفاصيل الفوترة",
+      "firstName": "الاسم الأول",
+      "lastName": "اسم العائلة",
+      "email": "البريد الإلكتروني",
+      "phone": "الهاتف",
+      "address": "العنوان",
+      "city": "المدينة",
+      "country": "البلد",
+      "zip": "الرمز البريدي",
+      "payment": "طريقة الدفع",
+      "placeOrder": "تأكيد الطلب",
+      "orderSummary": "ملخص الطلب"
+    },
+    "about": {
+      "title": "من نحن",
+      "story": "قصتنا",
+      "mission": "مهمتنا",
+      "values": "قيمنا"
+    },
+    "contact": {
+      "title": "اتصل بنا",
+      "name": "الاسم",
+      "email": "البريد الإلكتروني",
+      "message": "الرسالة",
+      "send": "إرسال الرسالة",
+      "info": "معلومات الاتصال"
+    },
+    "faq": {
+      "title": "الأسئلة الشائعة"
+    }
+  }
+}

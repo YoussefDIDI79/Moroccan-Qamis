@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Shop authentic Moroccan Qamis - Browse our complete collection">
+  <title>Shop - Moroccan Qamis</title>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Lato:wght@300;400;700&family=Cairo:wght@300;400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/responsive.css">
+  
+  <style>
+    .shop-header {
+      background: linear-gradient(135deg, var(--primary), var(--secondary));
+      color: var(--white);
+      padding: 4rem 0 2rem;
+      text-align: center;
+    }
+    
+    .shop-container {
+      display: grid;
+      grid-template-columns: 280px 1fr;
+      gap: 3rem;
+      padding: 3rem 0;
+    }
+    
+    .filters-sidebar {
+      background: var(--white);
+      padding: 2rem;
+      border-radius: 8px;
+      height: fit-content;
+      position: sticky;
+      top: 100px;
+      box-shadow: 0 2px 8px var(--shadow);
+    }
+    
+    .filter-group {
+      margin-bottom: 2rem;
+      padding-bottom: 2rem;
+      border-bottom: 1px solid var(--border);
+    }
+    
+    .filter-group:last-child {
+      border-bottom: none;
+    }
+    
+    .filter-group h3 {
+      font-size: 1rem;
+      margin-bottom: 1rem;
+      color: var(--primary);
+    }
+    
+    .category-filters {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+    
+    .category-filter {
+      padding: 0.75rem 1rem;
+      background: var(--background);
+      border-radius: 4px;
+      text-align: left;
+      width: 100%;
+      transition: var(--transition);
+    }
+    
+    .category-filter:hover,
+    .category-filter.active {
+      background: var(--primary);
+      color: var(--white);
+    }
+    
+    .price-range-container {
+      margin-top: 1rem;
+    }
+    
+    #price-range {
+      width: 100%;
+      margin-bottom: 0.5rem;
+    }
+    
+    #price-value {
+      display: block;
+      text-align: center;
+      font-weight: 600;
+      color: var(--primary);
+    }
+    
+    .shop-controls {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 2rem;
+      padding: 1rem;
+      background: var(--white);
+      border-radius: 8px;
+    }
+    
+    .results-count {
+      color: var(--text-light);
+    }
+    
+    @media (max-width: 768px) {
+      .shop-container {
+        grid-template-columns: 1fr;
+      }
+      
+      .filters-sidebar {
+        position: static;
+      }
+      
+      .shop-controls {
+        flex-direction: column;
+        gap: 1rem;
+        align-items: stretch;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="container">
+      <div class="logo">Moroccan Qamis</div>
+      
+      <ul class="nav-menu">
+        <li><a href="index.html" data-i18n="nav.home">Home</a></li>
+        <li><a href="shop.html" data-i18n="nav.shop">Shop</a></li>
+        <li><a href="about.html" data-i18n="nav.about">About</a></li>
+        <li><a href="contact.html" data-i18n="nav.contact">Contact</a></li>
+        <li><a href="faq.html" data-i18n="nav.faq">FAQ</a></li>
+      </ul>
+      
+      <div class="nav-actions">
+        <button class="lang-switch" data-lang="en">🇬🇧 EN</button>
+        <button class="lang-switch" data-lang="ar">🇸🇦 AR</button>
+        <a href="cart.html" class="cart-icon">
+          <i class="fas fa-shopping-cart"></i>
+          <span class="cart-count">0</span>
+        </a>
+      </div>
+      
+      <button class="menu-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Shop Header -->
+  <section class="shop-header">
+    <div class="container">
+      <h1 data-i18n="shop.title">Our Collection</h1>
+    </div>
+  </section>
+
+  <!-- Shop Content -->
+  <section class="section">
+    <div class="container">
+      <div class="shop-container">
+        <!-- Filters Sidebar -->
+        <aside class="filters-sidebar">
+          <h2 data-i18n="shop.filters">Filters</h2>
+          
+          <div class="filter-group">
+            <h3 data-i18n="categories.title">Categories</h3>
+            <div class="category-filters">
+              <button class="category-filter active" data-category="all">All Products</button>
+              <button class="category-filter" data-category="classic" data-i18n="categories.classic">Classic Qamis</button>
+              <button class="category-filter" data-category="embroidered" data-i18n="categories.embroidered">Embroidered</button>
+              <button class="category-filter" data-category="modern" data-i18n="categories.modern">Modern Cuts</button>
+              <button class="category-filter" data-category="luxury" data-i18n="categories.luxury">Luxury Collection</button>
+            </div>
+          </div>
+          
+          <div class="filter-group">
+            <h3 data-i18n="shop.priceRange">Price Range</h3>
+            <div class="price-range-container">
+              <input type="range" id="price-range" min="0" max="300" value="300" step="10">
+              <span id="price-value">$0 - $300</span>
+            </div>
+          </div>
+          
+          <div class="filter-group">
+            <h3 data-i18n="shop.size">Size</h3>
+            <select id="size-filter" class="form-group">
+              <option value="all">All Sizes</option>
+              <option value="S">S</option>
+              <option value="M">M</option>
+              <option value="L">L</option>
+              <option value="XL">XL</option>
+              <option value="XXL">XXL</option>
+            </select>
+          </div>
+          
+          <div class="filter-group">
+            <h3 data-i18n="shop.color">Color</h3>
+            <select id="color-filter" class="form-group">
+              <option value="all">All Colors</option>
+              <option value="white">White</option>
+              <option value="black">Black</option>
+              <option value="navy">Navy</option>
+              <option value="beige">Beige</option>
+              <option value="cream">Cream</option>
+              <option value="gray">Gray</option>
+            </select>
+          </div>
+          
+          <button id="reset-filters" class="btn btn-outline" style="width: 100%;">Reset Filters</button>
+        </aside>
+        
+        <!-- Products Grid -->
+        <div>
+          <div class="shop-controls">
+            <span class="results-count" id="results-count">Showing all products</span>
+            <div class="form-group" style="margin: 0; min-width: 200px;">
+              <select id="sort-select">
+                <option value="featured">Featured</option>
+                <option value="price-low">Price: Low to High</option>
+                <option value="price-high">Price: High to Low</option>
+                <option value="name">Name: A-Z</option>
+              </select>
+            </div>
+          </div>
+          
+          <div class="products-grid" id="products-grid"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3 data-i18n="footer.about">About Us</h3>
+          <p data-i18n="footer.aboutText">Bringing authentic Moroccan craftsmanship to the world</p>
+        </div>
+        
+        <div class="footer-section">
+          <h3 data-i18n="footer.quickLinks">Quick Links</h3>
+          <ul>
+            <li><a href="shop.html" data-i18n="nav.shop">Shop</a></li>
+            <li><a href="about.html" data-i18n="nav.about">About</a></li>
+            <li><a href="contact.html" data-i18n="nav.contact">Contact</a></li>
+            <li><a href="faq.html" data-i18n="nav.faq">FAQ</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-section">
+          <h3 data-i18n="footer.customer">Customer Service</h3>
+          <ul>
+            <li><a href="#" data-i18n="footer.shipping">Shipping Info</a></li>
+            <li><a href="#" data-i18n="footer.returns">Returns</a></li>
+            <li><a href="#" data-i18n="footer.privacy">Privacy Policy</a></li>
+            <li><a href="#" data-i18n="footer.terms">Terms & Conditions</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-section">
+          <h3 data-i18n="footer.newsletter">Newsletter</h3>
+          <p data-i18n="footer.newsletterText">Subscribe for exclusive offers</p>
+          <form class="newsletter-form">
+            <input type="email" data-i18n="footer.emailPlaceholder" placeholder="Your email" required>
+            <button type="submit" class="btn btn-primary" data-i18n="footer.subscribe">Subscribe</button>
+          </form>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p>&copy; 2024 Moroccan Qamis. <span data-i18n="footer.rights">All rights reserved</span>.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="assets/js/lang.js"></script>
+  <script src="assets/js/cart.js"></script>
+  <script src="assets/js/filters.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/form-validation.js"></script>
+  
+  <script>
+    document.addEventListener('DOMContentLoaded', async () => {
+      await loadProducts();
+      
+      // Check for category parameter in URL
+      const urlParams = new URLSearchParams(window.location.search);
+      const category = urlParams.get('category');
+      if (category) {
+        filters.category = category;
+        document.querySelectorAll('.category-filter').forEach(btn => {
+          btn.classList.toggle('active', btn.dataset.category === category);
+        });
+      }
+      
+      renderProducts();
+      filters.init();
+      
+      // Update results count
+      updateResultsCount();
+    });
+    
+    function updateResultsCount() {
+      const filtered = filters.apply(products);
+      const count = filtered.length;
+      const countEl = document.getElementById('results-count');
+      countEl.textContent = `Showing ${count} product${count !== 1 ? 's' : ''}`;
+    }
+    
+    // Override renderProducts to update count
+    const originalRenderProducts = renderProducts;
+    renderProducts = function() {
+      originalRenderProducts();
+      updateResultsCount();
+    };
+  </script>
+</body>
+</html>

@@ -1,0 +1,146 @@
+[
+  {
+    "id": 1,
+    "name": {
+      "en": "Classic White Qamis",
+      "ar": "قميص أبيض كلاسيكي"
+    },
+    "price": 89.99,
+    "image": "https://images.unsplash.com/photo-1622519407650-3df9883f76e6?w=800&h=1200&fit=crop",
+    "category": "classic",
+    "sizes": ["S", "M", "L", "XL", "XXL"],
+    "colors": ["white", "cream"],
+    "description": {
+      "en": "Traditional Moroccan qamis crafted from premium cotton. Perfect for daily wear and special occasions.",
+      "ar": "قميص مغربي تقليدي مصنوع من القطن الفاخر. مثالي للارتداء اليومي والمناسبات الخاصة."
+    },
+    "featured": true,
+    "bestseller": true
+  },
+  {
+    "id": 2,
+    "name": {
+      "en": "Embroidered Navy Qamis",
+      "ar": "قميص كحلي مطرز"
+    },
+    "price": 129.99,
+    "image": "https://images.unsplash.com/photo-1583743814966-8936f5b7be1a?w=800&h=1200&fit=crop",
+    "category": "embroidered",
+    "sizes": ["M", "L", "XL", "XXL"],
+    "colors": ["navy", "black"],
+    "description": {
+      "en": "Elegant qamis with intricate hand embroidery. A masterpiece of Moroccan craftsmanship.",
+      "ar": "قميص أنيق مع تطريز يدوي معقد. تحفة فنية من الحرفية المغربية."
+    },
+    "featured": true,
+    "bestseller": true
+  },
+  {
+    "id": 3,
+    "name": {
+      "en": "Modern Slim Fit Qamis",
+      "ar": "قميص عصري ضيق"
+    },
+    "price": 99.99,
+    "image": "https://images.unsplash.com/photo-1490481651871-ab68de25d43d?w=800&h=1200&fit=crop",
+    "category": "modern",
+    "sizes": ["S", "M", "L", "XL"],
+    "colors": ["beige", "gray", "black"],
+    "description": {
+      "en": "Contemporary design meets traditional elegance. Tailored for a modern fit.",
+      "ar": "التصميم المعاصر يلتقي بالأناقة التقليدية. مصمم بقصة عصرية."
+    },
+    "featured": false,
+    "bestseller": true
+  },
+  {
+    "id": 4,
+    "name": {
+      "en": "Luxury Gold Thread Qamis",
+      "ar": "قميص فاخر بخيوط ذهبية"
+    },
+    "price": 199.99,
+    "image": "https://images.unsplash.com/photo-1617127365659-c47fa864d8bc?w=800&h=1200&fit=crop",
+    "category": "luxury",
+    "sizes": ["M", "L", "XL"],
+    "colors": ["white", "cream"],
+    "description": {
+      "en": "Premium qamis adorned with gold thread embroidery. Perfect for weddings and celebrations.",
+      "ar": "قميص فاخر مزين بتطريز بخيوط ذهبية. مثالي للأعراس والاحتفالات."
+    },
+    "featured": true,
+    "bestseller": false
+  },
+  {
+    "id": 5,
+    "name": {
+      "en": "Summer Linen Qamis",
+      "ar": "قميص كتان صيفي"
+    },
+    "price": 79.99,
+    "image": "https://images.unsplash.com/photo-1618932260643-eee4a2f652a6?w=800&h=1200&fit=crop",
+    "category": "classic",
+    "sizes": ["S", "M", "L", "XL", "XXL"],
+    "colors": ["beige", "light blue", "white"],
+    "description": {
+      "en": "Lightweight linen qamis perfect for warm weather. Breathable and comfortable.",
+      "ar": "قميص كتان خفيف مثالي للطقس الدافئ. قابل للتنفس ومريح."
+    },
+    "featured": false,
+    "bestseller": true
+  },
+  {
+    "id": 6,
+    "name": {
+      "en": "Black Embroidered Qamis",
+      "ar": "قميص أسود مطرز"
+    },
+    "price": 139.99,
+    "image": "https://images.unsplash.com/photo-1603252109303-2751441dd157?w=800&h=1200&fit=crop",
+    "category": "embroidered",
+    "sizes": ["M", "L", "XL", "XXL"],
+    "colors": ["black"],
+    "description": {
+      "en": "Sophisticated black qamis with silver embroidery details. Makes a bold statement.",
+      "ar": "قميص أسود راقي مع تفاصيل تطريز فضية. يترك انطباعاً قوياً."
+    },
+    "featured": true,
+    "bestseller": false
+  },
+  {
+    "id": 7,
+    "name": {
+      "en": "Casual Beige Qamis",
+      "ar": "قميص بيج كاجوال"
+    },
+    "price": 69.99,
+    "image": "https://images.unsplash.com/photo-1591047139829-d91aecb6caea?w=800&h=1200&fit=crop",
+    "category": "modern",
+    "sizes": ["S", "M", "L", "XL"],
+    "colors": ["beige", "tan"],
+    "description": {
+      "en": "Relaxed fit qamis for everyday comfort. Simple yet elegant design.",
+      "ar": "قميص بقصة مريحة للراحة اليومية. تصميم بسيط وأنيق."
+    },
+    "featured": false,
+    "bestseller": false
+  },
+  {
+    "id": 8,
+    "name": {
+      "en": "Royal Blue Luxury Qamis",
+      "ar": "قميص أزرق ملكي فاخر"
+    },
+    "price": 179.99,
+    "image": "https://images.unsplash.com/photo-1564859228273-274232fdb516?w=800&h=1200&fit=crop",
+    "category": "luxury",
+    "sizes": ["M", "L", "XL"],
+    "colors": ["royal blue"],
+    "description": {
+      "en": "Regal blue qamis with premium fabric and exquisite detailing. A true showstopper.",
+      "ar": "قميص أزرق ملكي بقماش فاخر وتفاصيل رائعة. قطعة استثنائية حقاً."
+    },
+    "featured": true,
+    "bestseller": false
+  }
+]

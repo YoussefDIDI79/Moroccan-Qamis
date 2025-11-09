@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Authentic Moroccan Qamis - Handcrafted elegance from the heart of Morocco">
+  <title>Moroccan Qamis - Authentic Traditional Clothing</title>
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Lato:wght@300;400;700&family=Cairo:wght@300;400;700&display=swap" rel="stylesheet">
+  
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  
+  <!-- Swiper -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+  
+  <!-- AOS -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+  
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="container">
+      <div class="logo">Moroccan Qamis</div>
+      
+      <ul class="nav-menu">
+        <li><a href="index.html" data-i18n="nav.home">Home</a></li>
+        <li><a href="shop.html" data-i18n="nav.shop">Shop</a></li>
+        <li><a href="about.html" data-i18n="nav.about">About</a></li>
+        <li><a href="contact.html" data-i18n="nav.contact">Contact</a></li>
+        <li><a href="faq.html" data-i18n="nav.faq">FAQ</a></li>
+      </ul>
+      
+      <div class="nav-actions">
+        <button class="lang-switch" data-lang="en">🇬🇧 EN</button>
+        <button class="lang-switch" data-lang="ar">🇸🇦 AR</button>
+        <a href="cart.html" class="cart-icon">
+          <i class="fas fa-shopping-cart"></i>
+          <span class="cart-count">0</span>
+        </a>
+      </div>
+      
+      <button class="menu-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero" style="background: linear-gradient(rgba(42, 124, 91, 0.7), rgba(42, 124, 91, 0.7)), url('https://images.unsplash.com/photo-1583743814966-8936f5b7be1a?w=1920&h=1080&fit=crop') center/cover no-repeat;">
+    <div class="hero-content" data-aos="fade-up">
+      <h1 data-i18n="hero.title">Authentic Moroccan Qamis</h1>
+      <p data-i18n="hero.subtitle">Handcrafted elegance from the heart of Morocco</p>
+      <a href="shop.html" class="btn btn-primary" data-i18n="hero.shopBtn">Shop Now</a>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section class="features">
+    <div class="container">
+      <div class="features-grid">
+        <div class="feature-card" data-aos="fade-up" data-aos-delay="100">
+          <div class="feature-icon">
+            <i class="fas fa-gem"></i>
+          </div>
+          <h3 data-i18n="features.quality.title">Premium Quality</h3>
+          <p data-i18n="features.quality.desc">Finest fabrics and traditional craftsmanship</p>
+        </div>
+        
+        <div class="feature-card" data-aos="fade-up" data-aos-delay="200">
+          <div class="feature-icon">
+            <i class="fas fa-shipping-fast"></i>
+          </div>
+          <h3 data-i18n="features.shipping.title">Free Shipping</h3>
+          <p data-i18n="features.shipping.desc">On orders over $100 worldwide</p>
+        </div>
+        
+        <div class="feature-card" data-aos="fade-up" data-aos-delay="300">
+          <div class="feature-icon">
+            <i class="fas fa-undo"></i>
+          </div>
+          <h3 data-i18n="features.returns.title">Easy Returns</h3>
+          <p data-i18n="features.returns.desc">30-day hassle-free return policy</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Categories Section -->
+  <section class="section">
+    <div class="container">
+      <h2 class="section-title" data-i18n="categories.title">Shop by Category</h2>
+      <div class="categories-grid">
+        <a href="shop.html?category=classic" class="category-card" data-aos="zoom-in">
+          <img src="https://images.unsplash.com/photo-1622519407650-3df9883f76e6?w=600&h=600&fit=crop" alt="Classic Qamis">
+          <h3 data-i18n="categories.classic">Classic Qamis</h3>
+        </a>
+        
+        <a href="shop.html?category=embroidered" class="category-card" data-aos="zoom-in" data-aos-delay="100">
+          <img src="https://images.unsplash.com/photo-1583743814966-8936f5b7be1a?w=600&h=600&fit=crop" alt="Embroidered">
+          <h3 data-i18n="categories.embroidered">Embroidered</h3>
+        </a>
+        
+        <a href="shop.html?category=modern" class="category-card" data-aos="zoom-in" data-aos-delay="200">
+          <img src="https://images.unsplash.com/photo-1490481651871-ab68de25d43d?w=600&h=600&fit=crop" alt="Modern Cuts">
+          <h3 data-i18n="categories.modern">Modern Cuts</h3>
+        </a>
+        
+        <a href="shop.html?category=luxury" class="category-card" data-aos="zoom-in" data-aos-delay="300">
+          <img src="https://images.unsplash.com/photo-1617127365659-c47fa864d8bc?w=600&h=600&fit=crop" alt="Luxury Collection">
+          <h3 data-i18n="categories.luxury">Luxury Collection</h3>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Bestsellers Section -->
+  <section class="section" style="background: var(--white);">
+    <div class="container">
+      <h2 class="section-title" data-i18n="bestsellers.title">Bestsellers</h2>
+      <div class="swiper bestsellers-slider">
+        <div class="swiper-wrapper" id="bestsellers-container"></div>
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section class="section testimonials">
+    <div class="container">
+      <h2 class="section-title" data-i18n="testimonials.title">What Our Customers Say</h2>
+      <div class="swiper testimonials-slider">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="testimonial-card">
+              <p class="testimonial-text">"Absolutely stunning quality! The embroidery is exquisite and the fit is perfect. Will definitely order again."</p>
+              <p class="testimonial-author">- Ahmed K.</p>
+            </div>
+          </div>
+          
+          <div class="swiper-slide">
+            <div class="testimonial-card">
+              <p class="testimonial-text">"Fast shipping and beautiful packaging. The qamis exceeded my expectations. Highly recommended!"</p>
+              <p class="testimonial-author">- Youssef M.</p>
+            </div>
+          </div>
+          
+          <div class="swiper-slide">
+            <div class="testimonial-card">
+              <p class="testimonial-text">"Perfect for special occasions. The fabric is luxurious and the craftsmanship is outstanding."</p>
+              <p class="testimonial-author">- Omar S.</p>
+            </div>
+          </div>
+          
+          <div class="swiper-slide">
+            <div class="testimonial-card">
+              <p class="testimonial-text">"Great customer service and authentic Moroccan quality. My go-to place for traditional clothing."</p>
+              <p class="testimonial-author">- Karim B.</p>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Banner -->
+  <section class="cta-banner">
+    <div class="container">
+      <h2 data-i18n="cta.title">New Collection Available</h2>
+      <p data-i18n="cta.subtitle">Discover our latest designs</p>
+      <a href="shop.html" class="btn btn-secondary" data-i18n="cta.btn">Explore Now</a>
+    </div>
+  </section>
+
+  <!-- Instagram Feed -->
+  <section class="section">
+    <div class="container">
+      <h2 class="section-title" data-i18n="instagram.title">Follow Us @MoroccanQamis</h2>
+      <div class="products-grid" style="grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));">
+        <div class="category-card" style="height: 200px;">
+          <img src="https://images.unsplash.com/photo-1622519407650-3df9883f76e6?w=400&h=400&fit=crop" alt="Instagram 1">
+        </div>
+        <div class="category-card" style="height: 200px;">
+          <img src="https://images.unsplash.com/photo-1583743814966-8936f5b7be1a?w=400&h=400&fit=crop" alt="Instagram 2">
+        </div>
+        <div class="category-card" style="height: 200px;">
+          <img src="https://images.unsplash.com/photo-1490481651871-ab68de25d43d?w=400&h=400&fit=crop" alt="Instagram 3">
+        </div>
+        <div class="category-card" style="height: 200px;">
+          <img src="https://images.unsplash.com/photo-1617127365659-c47fa864d8bc?w=400&h=400&fit=crop" alt="Instagram 4">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3 data-i18n="footer.about">About Us</h3>
+          <p data-i18n="footer.aboutText">Bringing authentic Moroccan craftsmanship to the world</p>
+        </div>
+        
+        <div class="footer-section">
+          <h3 data-i18n="footer.quickLinks">Quick Links</h3>
+          <ul>
+            <li><a href="shop.html" data-i18n="nav.shop">Shop</a></li>
+            <li><a href="about.html" data-i18n="nav.about">About</a></li>
+            <li><a href="contact.html" data-i18n="nav.contact">Contact</a></li>
+            <li><a href="faq.html" data-i18n="nav.faq">FAQ</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-section">
+          <h3 data-i18n="footer.customer">Customer Service</h3>
+          <ul>
+            <li><a href="#" data-i18n="footer.shipping">Shipping Info</a></li>
+            <li><a href="#" data-i18n="footer.returns">Returns</a></li>
+            <li><a href="#" data-i18n="footer.privacy">Privacy Policy</a></li>
+            <li><a href="#" data-i18n="footer.terms">Terms & Conditions</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-section">
+          <h3 data-i18n="footer.newsletter">Newsletter</h3>
+          <p data-i18n="footer.newsletterText">Subscribe for exclusive offers</p>
+          <form class="newsletter-form">
+            <input type="email" data-i18n="footer.emailPlaceholder" placeholder="Your email" required>
+            <button type="submit" class="btn btn-primary" data-i18n="footer.subscribe">Subscribe</button>
+          </form>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p>&copy; 2024 Moroccan Qamis. <span data-i18n="footer.rights">All rights reserved</span>.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="assets/js/lang.js"></script>
+  <script src="assets/js/cart.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/form-validation.js"></script>
+  
+  <script>
+    // Load and render bestsellers
+    document.addEventListener('DOMContentLoaded', async () => {
+      await loadProducts();
+      const bestsellers = products.filter(p => p.bestseller);
+      const container = document.getElementById('bestsellers-container');
+      
+      container.innerHTML = bestsellers.map(product => {
+        const card = renderProductCard(product);
+        return `<div class="swiper-slide">${card}</div>`;
+      }).join('');
+      
+      // Reinitialize Swiper after content is loaded
+      initSwipers();
+    });
+  </script>
+</body>
+</html>

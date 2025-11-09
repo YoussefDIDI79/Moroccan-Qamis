@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us - Moroccan Qamis</title>
+  
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Lato:wght@300;400;700&family=Cairo:wght@300;400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/responsive.css">
+  
+  <style>
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 3rem;
+      padding: 3rem 0;
+    }
+    
+    .contact-info {
+      background: var(--white);
+      padding: 2rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px var(--shadow);
+    }
+    
+    .contact-item {
+      display: flex;
+      align-items: start;
+      gap: 1rem;
+      margin-bottom: 2rem;
+    }
+    
+    .contact-icon {
+      width: 50px;
+      height: 50px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: var(--background);
+      border-radius: 50%;
+      color: var(--primary);
+      font-size: 1.25rem;
+      flex-shrink: 0;
+    }
+    
+    @media (max-width: 768px) {
+      .contact-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar">
+    <div class="container">
+      <div class="logo">Moroccan Qamis</div>
+      <ul class="nav-menu">
+        <li><a href="index.html" data-i18n="nav.home">Home</a></li>
+        <li><a href="shop.html" data-i18n="nav.shop">Shop</a></li>
+        <li><a href="about.html" data-i18n="nav.about">About</a></li>
+        <li><a href="contact.html" data-i18n="nav.contact">Contact</a></li>
+        <li><a href="faq.html" data-i18n="nav.faq">FAQ</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button class="lang-switch" data-lang="en">🇬🇧 EN</button>
+        <button class="lang-switch" data-lang="ar">🇸🇦 AR</button>
+        <a href="cart.html" class="cart-icon">
+          <i class="fas fa-shopping-cart"></i>
+          <span class="cart-count">0</span>
+        </a>
+      </div>
+      <button class="menu-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <section class="section">
+    <div class="container">
+      <h1 data-i18n="contact.title" class="text-center">Contact Us</h1>
+      <p class="text-center" style="max-width: 600px; margin: 0 auto 3rem;">Have a question? We'd love to hear from you. Send us a message and we'll respond as soon as possible.</p>
+      
+      <div class="contact-grid">
+        <div class="contact-info">
+          <h2 data-i18n="contact.info">Contact Information</h2>
+          
+          <div class="contact-item">
+            <div class="contact-icon">
+              <i class="fas fa-map-marker-alt"></i>
+            </div>
+            <div>
+              <h3>Address</h3>
+              <p>123 Medina Street<br>Marrakech, Morocco</p>
+            </div>
+          </div>
+          
+          <div class="contact-item">
+            <div class="contact-icon">
+              <i class="fas fa-phone"></i>
+            </div>
+            <div>
+              <h3>Phone</h3>
+              <p>+212 5XX-XXXXXX</p>
+            </div>
+          </div>
+          
+          <div class="contact-item">
+            <div class="contact-icon">
+              <i class="fas fa-envelope"></i>
+            </div>
+            <div>
+              <h3>Email</h3>
+              <p>info@moroccanqamis.com</p>
+            </div>
+          </div>
+          
+          <div class="contact-item">
+            <div class="contact-icon">
+              <i class="fas fa-clock"></i>
+            </div>
+            <div>
+              <h3>Business Hours</h3>
+              <p>Monday - Friday: 9:00 AM - 6:00 PM<br>Saturday: 10:00 AM - 4:00 PM<br>Sunday: Closed</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="contact-info">
+          <h2>Send us a Message</h2>
+          <form id="contact-form">
+            <div class="form-group">
+              <label data-i18n="contact.name">Name</label>
+              <input type="text" required>
+            </div>
+            
+            <div class="form-group">
+              <label data-i18n="contact.email">Email</label>
+              <input type="email" required>
+            </div>
+            
+            <div class="form-group">
+              <label data-i18n="contact.message">Message</label>
+              <textarea rows="6" required></textarea>
+            </div>
+            
+            <button type="submit" class="btn btn-primary" style="width: 100%;" data-i18n="contact.send">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3 data-i18n="footer.about">About Us</h3>
+          <p data-i18n="footer.aboutText">Bringing authentic Moroccan craftsmanship to the world</p>
+        </div>
+        <div class="footer-section">
+          <h3 data-i18n="footer.quickLinks">Quick Links</h3>
+          <ul>
+            <li><a href="shop.html" data-i18n="nav.shop">Shop</a></li>
+            <li><a href="about.html" data-i18n="nav.about">About</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2024 Moroccan Qamis. <span data-i18n="footer.rights">All rights reserved</span>.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/lang.js"></script>
+  <script src="assets/js/cart.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/form-validation.js"></script>
+</body>
+</html>
